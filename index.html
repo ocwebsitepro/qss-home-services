@@ -320,35 +320,28 @@
               >
             </div>
           </div>
-          <form
-            class="contact-form"
-            name="contact"
-            method="POST"
-            action="/thank-you.html"
-            data-netlify="true"
-            netlify-honeypot="bot-field"
-          >
-            <input type="hidden" name="form-name" value="contact" />
-            <p class="honeypot">
-              <label>Don’t fill this out if you’re human: <input name="bot-field" /></label>
+          <form class="contact-form" id="contact-form" name="contact" novalidate>
+            <p class="honeypot" aria-hidden="true">
+              <label>Don’t fill this out if you’re human: <input name="bot-field" tabindex="-1" autocomplete="off" /></label>
             </p>
             <label>
               Name
-              <input type="text" name="name" autocomplete="name" required />
+              <input type="text" name="name" autocomplete="name" required maxlength="120" />
             </label>
             <label>
               Phone
-              <input type="tel" name="phone" autocomplete="tel" required />
+              <input type="tel" name="phone" autocomplete="tel" required maxlength="40" />
             </label>
             <label>
               Email
-              <input type="email" name="email" autocomplete="email" required />
+              <input type="email" name="email" autocomplete="email" required maxlength="200" />
             </label>
             <label>
               How can we help?
-              <textarea name="message" rows="4" required></textarea>
+              <textarea name="message" rows="4" required maxlength="5000"></textarea>
             </label>
-            <button class="btn btn-primary" type="submit">Request a callback</button>
+            <p class="form-status" id="form-status" role="status" aria-live="polite" hidden></p>
+            <button class="btn btn-primary" type="submit" id="contact-submit">Request a callback</button>
           </form>
         </div>
       </section>

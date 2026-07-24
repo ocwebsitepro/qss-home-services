@@ -527,6 +527,26 @@ address {
   overflow: hidden;
 }
 
+.form-status {
+  margin: 0;
+  font-size: 0.95rem;
+  font-weight: 600;
+}
+
+.form-status.is-error {
+  color: #9b1c1c;
+}
+
+.form-status.is-success {
+  color: var(--accent-deep);
+}
+
+.contact-form .btn:disabled {
+  opacity: 0.7;
+  cursor: wait;
+  transform: none;
+}
+
 .site-footer {
   background: var(--ink);
   color: rgba(255, 255, 255, 0.82);

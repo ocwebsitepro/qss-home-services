@@ -22,3 +22,16 @@ npx --yes serve .
 - Phone: (714) 884-9112
 - Huntington Beach, CA 92648
 - Owner: Michael Holder
+
+## Contact form / Resend
+
+The homepage form posts to `/.netlify/functions/contact`, which sends:
+
+1. A notification to the admin (`CONTACT_TO`)
+2. A confirmation to the person who submitted the form
+
+Required Netlify environment variables:
+
+- `RESEND_API_KEY` — Resend API key
+- `RESEND_FROM` — verified sender, e.g. `QSS Home Services <hello@qsshomeservices.com>`
+- `CONTACT_TO` — admin inbox (default: `michaelh1847@gmail.com`)

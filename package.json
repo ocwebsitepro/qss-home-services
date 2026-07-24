@@ -1,0 +1,15 @@
+{
+  "name": "qss-home-services",
+  "version": "1.0.0",
+  "private": true,
+  "description": "QSS Home Services website",
+  "scripts": {
+    "build": "echo \"Static site — no build step\""
+  },
+  "dependencies": {
+    "resend": "^4.6.0"
+  },
+  "engines": {
+    "node": ">=20"
+  }
+}
