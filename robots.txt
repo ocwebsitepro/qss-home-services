@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://qsshomeservices.com/sitemap.xml
+Sitemap: https://qss-home-services.netlify.app/sitemap.xml

@@ -15,7 +15,8 @@ npx --yes serve .
 1. Push this repo to GitHub.
 2. In Netlify: **Add new site → Import an existing project**.
 3. Build settings: leave build command empty; publish directory is `.` (configured in `netlify.toml`).
-4. After you have a custom domain, update the canonical URL, Open Graph URLs, and `sitemap.xml` / `robots.txt` if needed.
+4. Live site: https://qss-home-services.netlify.app  
+5. After you add a custom domain, update the canonical URL, Open Graph URLs, and `sitemap.xml` / `robots.txt`.
 
 ## Contact
 
