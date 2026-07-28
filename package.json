@@ -4,7 +4,8 @@
   "private": true,
   "description": "QSS Home Services website",
   "scripts": {
-    "build": "echo \"Static site — no build step\""
+    "build": "echo \"Static site — no build step\"",
+    "generate:services": "node scripts/generate-service-pages.mjs"
   },
   "dependencies": {
     "resend": "^4.6.0"
