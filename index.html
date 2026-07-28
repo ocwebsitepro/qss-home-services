@@ -3,14 +3,10 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>QSS Home Services | Appliance Repair &amp; Home Maintenance in Orange County</title>
+    <title>QSS Home Services | Appliance Repair in Orange County</title>
     <meta
       name="description"
-      content="QSS Home Services provides major appliance repair, installation, maintenance, dryer fire prevention, duct cleaning, light plumbing, and light electrical across Orange County. Call (714) 884-9112. Huntington Beach, CA."
-    />
-    <meta
-      name="keywords"
-      content="appliance repair Orange County, dryer duct cleaning Huntington Beach, whole home duct cleaning, light plumbing, light electrical, appliance installation, dryer fire prevention, QSS Home Services"
+      content="Appliance repair, installs, dryer fire prevention, duct cleaning, light plumbing &amp; electrical across Orange County. Call (714) 884-9112. Huntington Beach, CA."
     />
     <meta name="author" content="Michael Holder, QSS Home Services" />
     <meta name="robots" content="index, follow, max-image-preview:large" />
@@ -29,7 +25,10 @@
       content="Trusted appliance repair, installations, dryer fire prevention, duct cleaning, light plumbing, and light electrical across Orange County."
     />
     <meta property="og:url" content="https://qsshomeservices.com/" />
-    <meta property="og:image" content="https://qsshomeservices.com/assets/images/service-kitchen.png" />
+    <meta property="og:image" content="https://qsshomeservices.com/assets/images/og-share.jpg" />
+    <meta property="og:image:type" content="image/jpeg" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
     <meta property="og:image:alt" content="QSS Home Services technician explaining light electrical work in a kitchen" />
 
     <meta name="twitter:card" content="summary_large_image" />
@@ -38,9 +37,10 @@
       name="twitter:description"
       content="Appliance repair, installations, dryer fire prevention, duct cleaning, light plumbing &amp; electrical. Call (714) 884-9112."
     />
-    <meta name="twitter:image" content="https://qsshomeservices.com/assets/images/service-kitchen.png" />
+    <meta name="twitter:image" content="https://qsshomeservices.com/assets/images/og-share.jpg" />
+    <meta name="twitter:image:alt" content="QSS Home Services technician helping a homeowner in a kitchen" />
 
-    <link rel="icon" type="image/png" href="assets/images/logo.png" />
+    <link rel="icon" type="image/png" href="assets/images/favicon-32.png" />
     <link rel="apple-touch-icon" href="assets/images/logo.png" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -53,68 +53,71 @@
     <script type="application/ld+json">
       {
         "@context": "https://schema.org",
-        "@type": "HomeAndConstructionBusiness",
-        "@id": "https://qsshomeservices.com/#business",
-        "name": "QSS Home Services",
-        "alternateName": "QSS OC Home Services",
-        "url": "https://qsshomeservices.com/",
-        "logo": "https://qsshomeservices.com/assets/images/logo.png",
-        "image": [
-          "https://qsshomeservices.com/assets/images/service-kitchen.png",
-          "https://qsshomeservices.com/assets/images/service-electrical-pool.png",
-          "https://qsshomeservices.com/assets/images/service-garage.png"
-        ],
-        "description": "QSS Home Services offers major appliance repair, installation, and maintenance, dryer fire prevention, dryer and whole-home duct cleaning, light plumbing, and light electrical throughout Orange County, California.",
-        "telephone": "+17148849112",
-        "priceRange": "$$",
-        "currenciesAccepted": "USD",
-        "paymentAccepted": "Cash, Credit Card",
-        "founder": {
-          "@type": "Person",
-          "name": "Michael Holder"
-        },
-        "address": {
-          "@type": "PostalAddress",
-          "addressLocality": "Huntington Beach",
-          "addressRegion": "CA",
-          "postalCode": "92648",
-          "addressCountry": "US"
-        },
-        "geo": {
-          "@type": "GeoCoordinates",
-          "latitude": 33.6595,
-          "longitude": -117.9988
-        },
-        "areaServed": {
-          "@type": "AdministrativeArea",
-          "name": "Orange County, California"
-        },
-        "openingHoursSpecification": [
+        "@graph": [
           {
-            "@type": "OpeningHoursSpecification",
-            "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"],
-            "opens": "08:00",
-            "closes": "18:00"
+            "@type": "WebSite",
+            "@id": "https://qsshomeservices.com/#website",
+            "url": "https://qsshomeservices.com/",
+            "name": "QSS Home Services",
+            "description": "Appliance repair, installation, maintenance, dryer fire prevention, duct cleaning, light plumbing, and light electrical throughout Orange County, California.",
+            "publisher": { "@id": "https://qsshomeservices.com/#business" },
+            "inLanguage": "en-US"
+          },
+          {
+            "@type": "HomeAndConstructionBusiness",
+            "@id": "https://qsshomeservices.com/#business",
+            "name": "QSS Home Services",
+            "alternateName": "QSS OC Home Services",
+            "url": "https://qsshomeservices.com/",
+            "logo": "https://qsshomeservices.com/assets/images/logo.png",
+            "image": [
+              "https://qsshomeservices.com/assets/images/service-kitchen.jpg",
+              "https://qsshomeservices.com/assets/images/service-electrical-pool.jpg",
+              "https://qsshomeservices.com/assets/images/service-garage.jpg"
+            ],
+            "description": "QSS Home Services offers major appliance repair, installation, and maintenance, dryer fire prevention, dryer and whole-home duct cleaning, light plumbing, and light electrical throughout Orange County, California.",
+            "telephone": "+17148849112",
+            "priceRange": "$$",
+            "founder": {
+              "@type": "Person",
+              "name": "Michael Holder"
+            },
+            "address": {
+              "@type": "PostalAddress",
+              "addressLocality": "Huntington Beach",
+              "addressRegion": "CA",
+              "postalCode": "92648",
+              "addressCountry": "US"
+            },
+            "geo": {
+              "@type": "GeoCoordinates",
+              "latitude": 33.6595,
+              "longitude": -117.9988
+            },
+            "areaServed": {
+              "@type": "AdministrativeArea",
+              "name": "Orange County, California"
+            },
+            "sameAs": [
+              "https://www.instagram.com/qss.ochomeservices/",
+              "https://www.facebook.com/profile.php?id=61573312844817"
+            ],
+            "hasOfferCatalog": {
+              "@type": "OfferCatalog",
+              "name": "Home Services",
+              "itemListElement": [
+                { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Major Appliance Repair" } },
+                { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Major Appliance Installations" } },
+                { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Major Appliance Maintenance" } },
+                { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Dryer Fire Prevention" } },
+                { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Dryer Duct Cleaning" } },
+                { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Whole Home Duct Cleanings" } },
+                { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Light Plumbing" } },
+                { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Light Electrical" } }
+              ]
+            }
           }
-        ],
-        "sameAs": [
-          "https://www.instagram.com/qss.ochomeservices/",
-          "https://www.facebook.com/profile.php?id=61573312844817"
-        ],
-        "hasOfferCatalog": {
-          "@type": "OfferCatalog",
-          "name": "Home Services",
-          "itemListElement": [
-            { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Major Appliance Repair" } },
-            { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Major Appliance Installations" } },
-            { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Major Appliance Maintenance" } },
-            { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Dryer Fire Prevention" } },
-            { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Dryer Duct Cleaning" } },
-            { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Whole Home Duct Cleanings" } },
-            { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Light Plumbing" } },
-            { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Light Electrical" } }
-          ]
-        }
+        ]
       }
     </script>
   </head>
@@ -149,13 +152,16 @@
     <main id="main">
       <section class="hero" id="top" aria-labelledby="hero-heading">
         <div class="hero-media" aria-hidden="true">
-          <img
-            src="assets/images/service-kitchen.png"
-            alt=""
-            width="1920"
-            height="1080"
-            fetchpriority="high"
-          />
+          <picture>
+            <source srcset="assets/images/service-kitchen.webp" type="image/webp" />
+            <img
+              src="assets/images/service-kitchen.jpg"
+              alt=""
+              width="1600"
+              height="1067"
+              fetchpriority="high"
+            />
+          </picture>
         </div>
         <div class="hero-content">
           <img class="hero-logo" src="assets/images/logo.png" alt="QSS" width="220" height="220" />
@@ -231,13 +237,16 @@
             <p class="about-location">Servicing Orange County <span aria-hidden="true">🍊</span></p>
           </div>
           <figure class="about-photo">
-            <img
-              src="assets/images/service-electrical-panel.png"
-              alt="Michael Holder of QSS Home Services explaining an outdoor electrical panel to a family"
-              width="1200"
-              height="900"
-              loading="lazy"
-            />
+            <picture>
+              <source srcset="assets/images/service-electrical-panel.webp" type="image/webp" />
+              <img
+                src="assets/images/service-electrical-panel.jpg"
+                alt="Michael Holder of QSS Home Services explaining an outdoor electrical panel to a family"
+                width="1600"
+                height="1067"
+                loading="lazy"
+              />
+            </picture>
           </figure>
         </div>
       </section>
@@ -249,33 +258,42 @@
           <p class="section-lead">Clear communication, professional gear, and careful work — indoors and out.</p>
           <div class="work-gallery">
             <figure>
-              <img
-                src="assets/images/service-electrical-pool.png"
-                alt="QSS technician reviewing outdoor electrical equipment near a backyard pool"
-                width="1200"
-                height="900"
-                loading="lazy"
-              />
+              <picture>
+                <source srcset="assets/images/service-electrical-pool.webp" type="image/webp" />
+                <img
+                  src="assets/images/service-electrical-pool.jpg"
+                  alt="QSS technician reviewing outdoor electrical equipment near a backyard pool"
+                  width="1600"
+                  height="1067"
+                  loading="lazy"
+                />
+              </picture>
               <figcaption>Light electrical &amp; outdoor systems</figcaption>
             </figure>
             <figure>
-              <img
-                src="assets/images/service-garage.png"
-                alt="QSS technician discussing garage door opener maintenance with a homeowner"
-                width="1200"
-                height="900"
-                loading="lazy"
-              />
+              <picture>
+                <source srcset="assets/images/service-garage.webp" type="image/webp" />
+                <img
+                  src="assets/images/service-garage.jpg"
+                  alt="QSS technician discussing garage door opener maintenance with a homeowner"
+                  width="1600"
+                  height="1067"
+                  loading="lazy"
+                />
+              </picture>
               <figcaption>Garage &amp; home maintenance</figcaption>
             </figure>
             <figure>
-              <img
-                src="assets/images/service-kitchen.png"
-                alt="QSS technician assisting a homeowner with light electrical work in a modern kitchen"
-                width="1200"
-                height="900"
-                loading="lazy"
-              />
+              <picture>
+                <source srcset="assets/images/service-kitchen.webp" type="image/webp" />
+                <img
+                  src="assets/images/service-kitchen.jpg"
+                  alt="QSS technician assisting a homeowner with light electrical work in a modern kitchen"
+                  width="1600"
+                  height="1067"
+                  loading="lazy"
+                />
+              </picture>
               <figcaption>Kitchen appliances &amp; outlets</figcaption>
             </figure>
           </div>
