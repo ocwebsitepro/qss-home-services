@@ -751,12 +751,22 @@ address {
 }
 
 .page-hero {
-  padding: clamp(3rem, 7vw, 5rem) 0 clamp(2rem, 4vw, 3rem);
+  padding: clamp(2.5rem, 6vw, 4.5rem) 0 clamp(2rem, 4vw, 3rem);
 }
 
 .page-hero-inner {
   width: min(100% - 2rem, var(--max));
   margin-inline: auto;
+}
+
+.page-hero-split {
+  display: grid;
+  gap: 1.75rem;
+  align-items: center;
+}
+
+.page-hero-copy {
+  min-width: 0;
 }
 
 .breadcrumbs {
@@ -779,41 +789,51 @@ address {
   margin: 0 0 0.85rem;
   font-family: var(--font-display);
   font-weight: 800;
-  font-size: clamp(2.1rem, 5vw, 3.4rem);
+  font-size: clamp(2rem, 4.6vw, 3.2rem);
   line-height: 1.1;
   letter-spacing: -0.03em;
-  max-width: 18ch;
+  max-width: 16ch;
 }
 
 .page-lead {
   margin: 0 0 1.5rem;
-  max-width: 42ch;
+  max-width: 38ch;
   color: var(--ink-soft);
   font-size: 1.05rem;
+}
+
+.page-hero-media {
+  margin: 0;
+  overflow: clip;
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+}
+
+.page-hero-media img {
+  width: 100%;
+  height: min(58vw, 420px);
+  object-fit: cover;
 }
 
 .service-detail {
   padding: 0 0 clamp(4rem, 8vw, 6rem);
 }
 
-.service-detail-grid {
+.service-detail-inner {
   width: min(100% - 2rem, var(--max));
   margin-inline: auto;
-  display: grid;
-  gap: 2rem;
-  align-items: start;
+  max-width: 720px;
 }
 
-.service-detail-copy h2 {
+.service-detail-inner h2 {
   margin: 2rem 0 0.75rem;
   font-family: var(--font-display);
   font-size: 1.45rem;
   letter-spacing: -0.02em;
 }
 
-.service-detail-copy p {
+.service-detail-inner p {
   color: var(--ink-soft);
-  max-width: 58ch;
 }
 
 .check-list,
@@ -851,19 +871,6 @@ address {
   text-decoration: underline;
 }
 
-.service-detail-media {
-  margin: 0;
-  overflow: clip;
-  border-radius: var(--radius);
-  box-shadow: var(--shadow);
-}
-
-.service-detail-media img {
-  width: 100%;
-  height: min(70vw, 480px);
-  object-fit: cover;
-}
-
 .service-cta-note {
   margin-top: 2rem !important;
   font-weight: 500;
@@ -871,8 +878,12 @@ address {
 }
 
 @media (min-width: 860px) {
-  .service-detail-grid {
-    grid-template-columns: 1.1fr 0.9fr;
+  .page-hero-split {
+    grid-template-columns: minmax(0, 1fr) minmax(0, 1.05fr);
     gap: 3rem;
+  }
+
+  .page-hero-media img {
+    height: 460px;
   }
 }

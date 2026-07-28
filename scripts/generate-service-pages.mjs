@@ -205,7 +205,6 @@ function pageShell({
   jsonLd,
   activePath,
 }) {
-  const asset = "../../assets";
   return `<!DOCTYPE html>
 <html lang="en">
   <head>
@@ -225,12 +224,12 @@ function pageShell({
     <meta name="twitter:title" content="${title}" />
     <meta name="twitter:description" content="${description}" />
     <meta name="twitter:image" content="https://qsshomeservices.com/assets/images/og-share.jpg" />
-    <link rel="icon" type="image/png" href="${asset}/images/favicon-32.png" />
-    <link rel="apple-touch-icon" href="${asset}/images/logo.png" />
+    <link rel="icon" type="image/png" href="/assets/images/favicon-32.png" />
+    <link rel="apple-touch-icon" href="/assets/images/logo.png" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800&family=Sora:wght@400;500;600;700&display=swap" rel="stylesheet" />
-    <link rel="stylesheet" href="${asset}/css/styles.css" />
+    <link rel="stylesheet" href="/assets/css/styles.css" />
     <script type="application/ld+json">${jsonLd}</script>
   </head>
   <body>
@@ -238,7 +237,7 @@ function pageShell({
     <header class="site-header">
       <div class="header-inner">
         <a class="brand" href="/" aria-label="QSS Home Services home">
-          <img src="${asset}/images/logo.png" alt="QSS Home Services" width="160" height="52" />
+          <img src="/assets/images/logo.png" alt="QSS Home Services" width="160" height="52" />
         </a>
         <nav class="site-nav" aria-label="Primary">
           <a href="/services/"${activePath === "/services/" ? ' aria-current="page"' : ""}>Services</a>
@@ -262,35 +261,35 @@ function pageShell({
 
     <main id="main">
       <section class="page-hero">
-        <div class="page-hero-inner">
-          <nav class="breadcrumbs" aria-label="Breadcrumb">
-            <a href="/">Home</a>
-            <span aria-hidden="true">/</span>
-            <a href="/services/">Services</a>
-            <span aria-hidden="true">/</span>
-            <span>${eyebrow}</span>
-          </nav>
-          <p class="eyebrow">${eyebrow}</p>
-          <h1>${h1}</h1>
-          <p class="page-lead">${lead}</p>
-          <div class="hero-actions">
-            <a class="btn btn-primary" href="tel:+17148849112">Call (714) 884-9112</a>
-            <a class="btn btn-secondary dark" href="/#contact">Request a callback</a>
+        <div class="page-hero-inner page-hero-split">
+          <div class="page-hero-copy">
+            <nav class="breadcrumbs" aria-label="Breadcrumb">
+              <a href="/">Home</a>
+              <span aria-hidden="true">/</span>
+              <a href="/services/">Services</a>
+              <span aria-hidden="true">/</span>
+              <span>${eyebrow}</span>
+            </nav>
+            <p class="eyebrow">${eyebrow}</p>
+            <h1>${h1}</h1>
+            <p class="page-lead">${lead}</p>
+            <div class="hero-actions">
+              <a class="btn btn-primary" href="tel:+17148849112">Call (714) 884-9112</a>
+              <a class="btn btn-secondary dark" href="/#contact">Request a callback</a>
+            </div>
           </div>
+          <figure class="page-hero-media">
+            <picture>
+              <source srcset="/assets/images/${image}.webp" type="image/webp" />
+              <img src="/assets/images/${image}.jpg" alt="${imageAlt}" width="1600" height="1067" fetchpriority="high" />
+            </picture>
+          </figure>
         </div>
       </section>
 
       <section class="service-detail">
-        <div class="service-detail-grid">
-          <div class="service-detail-copy">
-            ${bodyHtml}
-          </div>
-          <figure class="service-detail-media">
-            <picture>
-              <source srcset="${asset}/images/${image}.webp" type="image/webp" />
-              <img src="${asset}/images/${image}.jpg" alt="${imageAlt}" width="1600" height="1067" loading="eager" />
-            </picture>
-          </figure>
+        <div class="service-detail-inner">
+          ${bodyHtml}
         </div>
       </section>
     </main>
@@ -298,7 +297,7 @@ function pageShell({
     <footer class="site-footer">
       <div class="footer-inner">
         <div class="footer-brand">
-          <img src="${asset}/images/logo.png" alt="QSS Home Services" width="160" height="56" />
+          <img src="/assets/images/logo.png" alt="QSS Home Services" width="160" height="56" />
           <p>QSS Home Services · Owned by Michael Holder</p>
         </div>
         <p class="footer-meta">
@@ -309,7 +308,7 @@ function pageShell({
       </div>
     </footer>
     <a class="mobile-call" href="tel:+17148849112">Call (714) 884-9112</a>
-    <script src="${asset}/js/main.js" defer></script>
+    <script src="/assets/js/main.js" defer></script>
   </body>
 </html>
 `;
@@ -394,11 +393,11 @@ const hub = `<!DOCTYPE html>
     <meta property="og:description" content="Appliance repair, installs, dryer safety, duct cleaning, light plumbing &amp; electrical across Orange County." />
     <meta property="og:url" content="https://qsshomeservices.com/services/" />
     <meta property="og:image" content="https://qsshomeservices.com/assets/images/og-share.jpg" />
-    <link rel="icon" type="image/png" href="../assets/images/favicon-32.png" />
+    <link rel="icon" type="image/png" href="/assets/images/favicon-32.png" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800&family=Sora:wght@400;500;600;700&display=swap" rel="stylesheet" />
-    <link rel="stylesheet" href="../assets/css/styles.css" />
+    <link rel="stylesheet" href="/assets/css/styles.css" />
     <script type="application/ld+json">
       ${JSON.stringify({
         "@context": "https://schema.org",
@@ -419,7 +418,7 @@ const hub = `<!DOCTYPE html>
     <header class="site-header">
       <div class="header-inner">
         <a class="brand" href="/" aria-label="QSS Home Services home">
-          <img src="../assets/images/logo.png" alt="QSS Home Services" width="160" height="52" />
+          <img src="/assets/images/logo.png" alt="QSS Home Services" width="160" height="52" />
         </a>
         <nav class="site-nav" aria-label="Primary">
           <a href="/services/" aria-current="page">Services</a>
@@ -477,7 +476,7 @@ const hub = `<!DOCTYPE html>
     <footer class="site-footer">
       <div class="footer-inner">
         <div class="footer-brand">
-          <img src="../assets/images/logo.png" alt="QSS Home Services" width="160" height="56" />
+          <img src="/assets/images/logo.png" alt="QSS Home Services" width="160" height="56" />
           <p>QSS Home Services · Owned by Michael Holder</p>
         </div>
         <p class="footer-meta">
@@ -488,7 +487,7 @@ const hub = `<!DOCTYPE html>
       </div>
     </footer>
     <a class="mobile-call" href="tel:+17148849112">Call (714) 884-9112</a>
-    <script src="../assets/js/main.js" defer></script>
+    <script src="/assets/js/main.js" defer></script>
   </body>
 </html>
 `;
