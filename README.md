@@ -20,7 +20,7 @@ npx --yes serve .
 ## Contact
 
 - Phone: (714) 884-9112
-- Huntington Beach, CA 92648
+- Newport Beach, CA 92663
 - Owner: Michael Holder
 
 ## Contact form / Resend

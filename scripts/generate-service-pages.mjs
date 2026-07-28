@@ -21,7 +21,7 @@ const services = [
       "Washers, dryers, refrigerators, ranges, ovens, and dishwashers",
       "Clear explanation of what failed and what repair options make sense",
       "Careful work in occupied homes — tidy, respectful, and communication-first",
-      "Serving Huntington Beach and communities across Orange County",
+      "Serving Newport Beach and communities across Orange County",
     ],
     body: [
       "Appliance breakdowns rarely wait for a convenient day. QSS Home Services provides major appliance repair for Orange County homeowners who want honest diagnostics and dependable workmanship.",
@@ -43,7 +43,7 @@ const services = [
       "Installations for major kitchen and laundry appliances",
       "Attention to fit, connections, leveling, and basic startup checks",
       "Less stress after delivery day — we handle the setup details",
-      "Orange County service based in Huntington Beach",
+      "Orange County service based in Newport Beach",
     ],
     body: [
       "A new appliance only feels finished when it is installed correctly. QSS Home Services helps Orange County homeowners with major appliance installations that are neat, secure, and ready to run.",
@@ -87,7 +87,7 @@ const services = [
       "Focus on lint-related fire risk around dryers and vents",
       "Pairs naturally with dryer duct cleaning for better airflow",
       "Practical safety guidance for homeowners",
-      "Serving Huntington Beach and Orange County",
+      "Serving Newport Beach and Orange County",
     ],
     body: [
       "Dryers work hard — and trapped lint can create serious heat and fire risk. QSS Home Services provides dryer fire prevention support so Orange County homeowners can feel more confident every laundry day.",
@@ -131,7 +131,7 @@ const services = [
       "Whole-home duct cleaning service",
       "Supports cleaner-feeling air circulation",
       "Helpful for homes with visible dust or reduced airflow concerns",
-      "Huntington Beach–based, Orange County–wide",
+      "Newport Beach–based, Orange County–wide",
     ],
     body: [
       "Your duct system moves air through the whole house. When it collects dust and debris, comfort and performance can suffer. QSS Home Services offers whole home duct cleanings for Orange County residences.",
@@ -153,7 +153,7 @@ const services = [
       "Everyday light plumbing support around the home",
       "Helpful for smaller household needs and service calls",
       "Clear communication and tidy work",
-      "Serving Orange County from Huntington Beach",
+      "Serving Orange County from Newport Beach",
     ],
     body: [
       "Light plumbing issues can disrupt a whole day. QSS Home Services provides light plumbing support for Orange County homes that need reliable help without the complexity of a major remodel project.",
@@ -175,7 +175,7 @@ const services = [
       "Outlets, fixtures, and other light electrical needs",
       "Clear walkthroughs so homeowners understand the work",
       "Professional, customer-focused service",
-      "Orange County coverage including Huntington Beach",
+      "Orange County coverage including Newport Beach",
     ],
     body: [
       "Electrical issues need care and clarity. QSS Home Services provides light electrical work for Orange County homeowners — the kind of practical jobs that keep rooms usable and systems understandable.",
@@ -302,7 +302,7 @@ function pageShell({
           <p>QSS Home Services · Owned by Michael Holder</p>
         </div>
         <p class="footer-meta">
-          Servicing Orange County <span aria-hidden="true">🍊</span> · Huntington Beach, CA 92648 ·
+          Servicing Orange County <span aria-hidden="true">🍊</span> · Newport Beach, CA 92663 ·
           <a href="tel:+17148849112">(714) 884-9112</a>
         </p>
         <p class="footer-copy">&copy; <span id="year"></span> QSS Home Services. All rights reserved.</p>
@@ -351,9 +351,9 @@ for (const service of services) {
       url: "https://qsshomeservices.com/",
       address: {
         "@type": "PostalAddress",
-        addressLocality: "Huntington Beach",
+        addressLocality: "Newport Beach",
         addressRegion: "CA",
-        postalCode: "92648",
+        postalCode: "92663",
         addressCountry: "US",
       },
     },
@@ -451,7 +451,7 @@ const hub = `<!DOCTYPE html>
           <p class="eyebrow">Orange County</p>
           <h1>Services for the systems your home depends on.</h1>
           <p class="page-lead">
-            Appliance repair, installs, maintenance, dryer safety, duct cleaning, light plumbing, and light electrical — from Huntington Beach across Orange County.
+            Appliance repair, installs, maintenance, dryer safety, duct cleaning, light plumbing, and light electrical — from Newport Beach across Orange County.
           </p>
           <div class="hero-actions">
             <a class="btn btn-primary" href="tel:+17148849112">Call (714) 884-9112</a>
@@ -481,7 +481,7 @@ const hub = `<!DOCTYPE html>
           <p>QSS Home Services · Owned by Michael Holder</p>
         </div>
         <p class="footer-meta">
-          Servicing Orange County <span aria-hidden="true">🍊</span> · Huntington Beach, CA 92648 ·
+          Servicing Orange County <span aria-hidden="true">🍊</span> · Newport Beach, CA 92663 ·
           <a href="tel:+17148849112">(714) 884-9112</a>
         </p>
         <p class="footer-copy">&copy; <span id="year"></span> QSS Home Services. All rights reserved.</p>

@@ -124,7 +124,7 @@ export async function handler(event) {
       <p style="margin: 0 0 8px;"><strong>Your message:</strong></p>
       <p style="margin: 0 0 20px; padding: 12px; background: #f5f6f7; border-radius: 4px;">${safeMessage}</p>
       <p style="margin: 0; color: #2a3038; font-size: 14px;">
-        QSS Home Services · Huntington Beach, CA · Servicing Orange County
+        QSS Home Services · Newport Beach, CA · Servicing Orange County
       </p>
     </div>
   `;
@@ -145,7 +145,7 @@ export async function handler(event) {
         replyTo: ADMIN_EMAIL,
         subject: "We received your request — QSS Home Services",
         html: customerHtml,
-        text: `Thanks, ${name} — we got your request.\n\nQSS Home Services received your message and will follow up soon.\n\nNeed help sooner? Call (714) 884-9112.\n\nYour message:\n${message}\n\nQSS Home Services · Huntington Beach, CA`,
+        text: `Thanks, ${name} — we got your request.\n\nQSS Home Services received your message and will follow up soon.\n\nNeed help sooner? Call (714) 884-9112.\n\nYour message:\n${message}\n\nQSS Home Services · Newport Beach, CA`,
       }),
     ]);
 
